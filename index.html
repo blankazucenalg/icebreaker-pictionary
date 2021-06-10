@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ice-break Pictionary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container grid_wrapper">
+    <section id="main_info">
+      <h1>Icebreaker Pictionary</h1>
+    </section>
+    <section id="rules" class="grid-wrapper">
+      <div class="col1">
+        <p>Bienvenido a nuestro juego de Pictionary para conocernos mejor!</p>
+        <ol>
+          <li>Checa a qué equipo perteneces.</li>
+          <li>En el turno de tu equipo, uno de ustedes escoge una pregunta para responder sobre sí mismo, o escoge una
+            palabra aleatoria generada.</li>
+          <li>Tu equipo y tú tendrán un minuto para adivinar tu respuesta mientras vas dibujando.</li>
+          <li>Si tu equipo no adivina pasado ese tiempo, el otro equipo puede tratar de adivinar para robar el punto.
+          </li>
+        </ol>
+      </div>
+      <div class="col2 align-right">
+        <div class="flex-row">
+          <div id="team_assigned"></div>
+          <a class="button" onclick="getRandomBinaryTeam()">Team selector</a>
+        </div>
+        <div>
+          <a href="https://cuckoo.team/icebreaker-pictionary" target="_blank" class="button">Timer de 1'</a>
+        </div>
+      </div>
+
+    </section>
+    <section id="icebreak_questions">
+      <p>Preguntas sobre ti:</p>
+      <ol>
+        <li>Cuales son tus hobbies?</li>
+        <li>Lugar favorito en el mundo</li>
+        <li>Deporte favorito?</li>
+        <li>Comida que te gustaría disfrutar en tu próximo cumpleaños?</li>
+        <li>Recuerdo más antigüo que tengas?</li>
+        <li>Qué profesión querías tener cuando eras niña(o)?</li>
+        <li>A qué le tienes fobia/miedo?</li>
+        <li>Festividad favorita?</li>
+        <li>Bebida favorita?</li>
+        <li>Mascota favorita?</li>
+        <li>Si fueras una planta, cuál serías?</li>
+        <li>Super héroe favorito?</li>
+        <li>Último género/artista que has escuchado</li>
+        <li>Serie/película favorita actualmente?</li>
+        <li>Película favorita de tu infancia?</li>
+        <li>Caricatura favorita?</li>
+        <li>Anime/manga/seiyuu favorito</li>
+        <li>Pokémon favorito</li>
+        <li>Con qué animal te identificas o cuál te representa?</li>
+        <li>Qué te gustaría recibir de cumpleaños?</li>
+        <li>Personaje que más te ha inspirado en la vida?</li>
+        <li>Qué es lo que más te gusta hacer con tus amigos?</li>
+        <li>Meme favorito o que más utilizas</li>
+        <a href="https://randomwordgenerator.com/pictionary.php" target="_blank" alt="Generate a random word">
+          <li>Utiliza una palabra aleatoria</li>
+        </a>
+
+      </ol>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
