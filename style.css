@@ -1,0 +1,139 @@
+:root {
+  --purple: 68, 25, 126;
+  --light-blue: 64, 193, 239;
+  --yellow: 245, 188, 24;
+  --red: 241, 91, 82;
+  --yellow-green: 143, 198, 64;
+  --main-color: rgb(var(--purple));
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex-row {
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.flex-row > * {
+  margin-left: 0.3rem;
+}
+
+#team_assigned {
+  height: 3rem;
+  width: 3rem;
+}
+
+#team_assigned.team-one {
+  background-color: rgb(var(--red));
+}
+
+#team_assigned.team-two {
+  background-color: rgb(var(--light-blue));
+}
+
+.align-right {
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-wrapper .col1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.grid-wrapper .col2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#icebreak_questions ol {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-position: inside;
+  padding-inline-start: 0;
+}
+
+#icebreak_questions ol li {
+  border: solid 3px white;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 0.7em;
+  padding: 0.6em 0.4em;
+}
+
+#icebreak_questions ol li:hover {
+  border: solid 3px rgb(var(--purple));
+  background-color: rgba(var(--purple), 0.1);
+}
+
+#icebreak_questions.team-one ol li:hover {
+  border: solid 3px rgb(var(--red));
+  background-color: rgba(var(--red), 0.1);
+}
+
+#icebreak_questions.team-one a {
+  color: rgb(var(--red));
+}
+
+#icebreak_questions.team-two ol li:hover {
+  border: solid 3px rgb(var(--light-blue));
+  background-color: rgba(var(--light-blue), 0.1);
+}
+
+#icebreak_questions.team-two a {
+  color: rgb(var(--light-blue));
+}
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  background: var(--main-color);
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.1s ease-out all;
+  cursor: pointer;
+}
+
+@media (max-width: 620px) {
+  #icebreak_questions ol {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+
+  .grid-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-wrapper .col1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .grid-wrapper .col2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
