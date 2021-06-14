@@ -8,3 +8,4 @@ This is a simple website with the basic setup for a Virtual Icebreaker Pictionar
 - A list of 23 questions to answer about yourself with a drawing.
 - An extra link to generate a random word. 
 
+You can view the page at https://blankazucenalg.com/icebreaker-pictionary/
